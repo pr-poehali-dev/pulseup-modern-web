@@ -63,20 +63,21 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4">
+      <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
             Наши услуги
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <Card 
                 key={index} 
-                className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:scale-105 group"
+                className="glass-card p-8 bg-card/30 backdrop-blur-xl border-border/50 hover:border-primary/50 transition-all duration-500 hover:scale-105 group relative overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-greenAccent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="flex flex-col items-center text-center space-y-4 relative z-10">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 backdrop-blur-sm flex items-center justify-center group-hover:bg-primary/20 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/20">
                     <Icon name={service.icon} size={32} className="text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold">{service.title}</h3>
@@ -90,13 +91,13 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4">
+      <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="relative rounded-3xl overflow-hidden">
+          <div className="relative rounded-3xl overflow-hidden glass-card backdrop-blur-xl border border-border/50">
             <img 
               src="https://cdn.poehali.dev/projects/fbcab1dc-d62e-401c-9cda-2c054be69db6/files/cfae5d70-2780-4a70-afb8-d77abdcbe409.jpg"
               alt="Искусственный интеллект"
-              className="w-full h-[500px] object-cover"
+              className="w-full h-[500px] object-cover opacity-80"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent flex items-end">
               <div className="p-12">
@@ -112,7 +113,8 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 bg-secondary/30">
+      <section className="py-16 px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent"></div>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
             Давайте создадим что-то великое вместе
