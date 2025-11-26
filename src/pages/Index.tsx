@@ -30,18 +30,18 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <section className="min-h-screen flex flex-col items-center justify-center px-4 animate-fade-in relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-greenAccent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-greenAccent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
           
-          <div className="absolute top-20 left-10 w-2 h-2 bg-primary rounded-full animate-float"></div>
-          <div className="absolute top-40 right-20 w-3 h-3 bg-greenAccent rounded-full animate-float" style={{ animationDelay: '0.5s' }}></div>
-          <div className="absolute bottom-32 left-1/3 w-2 h-2 bg-primary/70 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-greenAccent/70 rounded-full animate-float" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute top-20 left-10 w-3 h-3 bg-primary/60 rounded-full animate-float shadow-lg shadow-primary/20"></div>
+          <div className="absolute top-40 right-20 w-4 h-4 bg-greenAccent/60 rounded-full animate-float shadow-lg shadow-greenAccent/20" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute bottom-32 left-1/3 w-3 h-3 bg-primary/50 rounded-full animate-float shadow-lg shadow-primary/20" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-greenAccent/50 rounded-full animate-float shadow-lg shadow-greenAccent/20" style={{ animationDelay: '1.5s' }}></div>
           
-          <svg className="absolute top-1/4 right-10 w-24 h-24 text-primary/20 animate-float" style={{ animationDelay: '0.3s' }} viewBox="0 0 100 100">
+          <svg className="absolute top-1/4 right-10 w-24 h-24 text-primary/30 animate-float" style={{ animationDelay: '0.3s' }} viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="5,5" />
           </svg>
-          <svg className="absolute bottom-1/3 left-20 w-32 h-32 text-greenAccent/20 animate-float" style={{ animationDelay: '0.8s' }} viewBox="0 0 100 100">
+          <svg className="absolute bottom-1/3 left-20 w-32 h-32 text-greenAccent/30 animate-float" style={{ animationDelay: '0.8s' }} viewBox="0 0 100 100">
             <rect x="20" y="20" width="60" height="60" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="5,5" transform="rotate(45 50 50)" />
           </svg>
         </div>
